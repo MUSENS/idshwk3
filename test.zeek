@@ -28,7 +28,7 @@ event zeek_done()
 	{
 	for(sourIp, ua in relaTable)
 		{
-		if(|ua| >= 0)
+		if(|ua| >= 3)
 			{
 			print fmt("%s is a proxy", sourIp);
 			}
